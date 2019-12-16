@@ -63,55 +63,8 @@ p{
   padding: 50px 0 20px;
 }
 
-.skill-row {
-  margin: 100px auto 100px auto;
-  text-align: left;
-  width: 60%;
-
-}
-.computer{
-  float: left;
-  border-radius: 50%;
-  width: 25%;
-  margin-right: 30px;
-}
-
-.chillies{
-  float: right;
-  width: 25%;
-  margin-left: 30px;
-}
-
-.contact-message{
-  width: 40%;
-  margin: 40px auto 60px;
-}
-
-.copyright {
-  color: #EAF6F6;
-  font-size: 0.75rem;
-  padding: 20px 0;
-}
-
-.pro {
-  text-decoration: underline;
-}
-
-.intro{
-  width: 30%;
-  margin: auto;
-}
-
-.top-cloud {
-  position: absolute;
-  right: 300px;
-  top: 40px;
-}
-
-.bottom-cloud {
-  position: absolute;
-  left: 250px;
-  bottom: 300px;
+.hyperion {
+  margin: 0;
 }
 
 .btn {
@@ -139,4 +92,56 @@ p{
   background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
   background-image: linear-gradient(top, #30e3cb, #2bc4ad);
   text-decoration: none;
+}
+
+.computer{
+  float: left;
+  border-radius: 50%;
+  width: 25%;
+  margin-right: 30px;
+}
+
+.chillies{
+  float: right;
+  width: 25%;
+  margin-left: 30px;
+}
+
+.contact-message{
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.copyright {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+.skill-row {
+  margin: 100px auto 100px auto;
+  text-align: left;
+  width: 60%;
+
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.intro{
+  width: 30%;
+  margin: auto;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
 }
