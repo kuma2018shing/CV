@@ -3,63 +3,250 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Kuma Lawrence</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kuma Lawrence — Software Developer</title>
+
+  <meta name="description"
+    content="Kuma Lawrence — software developer based in Cape Town. Python, Java and JavaScript. I build trading tools, data pipelines and web apps.">
+  <meta name="author" content="Kuma Lawrence">
+  <meta name="theme-color" content="#11999E">
+
+  <!-- Link previews (WhatsApp, LinkedIn, Twitter, Slack) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kuma Lawrence — Software Developer">
+  <meta property="og:description"
+    content="Software developer based in Cape Town. Python, Java and JavaScript. I build trading tools, data pipelines and web apps.">
+  <meta property="og:url" content="https://kuma2018shing.github.io/CV/">
+  <meta property="og:image" content="https://kuma2018shing.github.io/CV/images/lawrence.jpg">
+  <meta name="twitter:card" content="summary">
+
   <link rel="icon" href="fav.ico">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Sacramento&family=Merriweather:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <div class="top-container">
-    <img class="top-cloud" src="images/cloud.png" alt="cloud-image">
-    <h1>I'm Kuma,</h1>
-    <h2>a <span class="pro">pro</span>grammer.</h2>
-    <img class="bottom-cloud " src="images/cloud.png" alt="cloud-image">
-    <img src="images/mountain.png" alt="mountain-image">
-  </div>
-  <div class="middle-container">
-    <div class="profile">
-      <img src="images/lawrence.jpg" alt="profile-image" height="150" width="150">
-      <h2>Hey there! 😀</h2>
-      <p class="intro">I am a software developer and Tech enthusiast. I build and design cutting edge websites with the latest technologies. </p>
-    </div>
-    <hr>
-    <div class="skills">
-      <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="computer" src="images/computer.png" alt="computer-img">
-        <h3>Design & Development</h3>
-        <p>I have always been passionate about coding and video games for a really long time, actually ever since I was a kid. I took a 3 months software engineering coding bootcamp <a class="hyperion" href="https://www.hyperiondev.com/">(HyperionDev)
-          </a> that i think changed my life forever as that was my way into the coding industry where i learned the basics of software programming and have ever since been working on developing my skills.
-          I have gained a wealth of experience designing and developing mobile and web apps in this short time.
-        </p>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-nav">
+    <a class="nav-brand" href="#top">KL</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <img class="cloud cloud-a" src="images/cloud.png" alt="" aria-hidden="true">
+    <img class="cloud cloud-b" src="images/cloud.png" alt="" aria-hidden="true">
+
+    <div class="hero-text">
+      <h1>I'm Kuma,</h1>
+      <p class="hero-sub">a <span class="pro">pro</span>grammer.</p>
+      <p class="hero-blurb">
+        I build trading tools, data pipelines and web apps — mostly in Python, Java and JavaScript.
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="#projects">See my work</a>
+        <a class="btn btn-ghost" href="mailto:kuma2018shing@gmail.com">Get in touch</a>
       </div>
+    </div>
 
-      <div class="skill-row">
-        <img class="chillies" src="images/chillies.png" alt="chillie-image">
-        <h3>Hot Wings Challenge</h3>
-        <p>But my best skill is actually in eating hot wings. I am the undisputed king of hot wing challenges.Ghost Peppers and Carolina Reapers are my favorite snacks.</p>
+    <img class="hero-mountain" src="images/mountain.png" alt="" aria-hidden="true">
+  </section>
+
+  <main id="main">
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="about-grid">
+        <img class="avatar" src="images/lawrence.jpg" alt="Portrait of Kuma Lawrence" width="180" height="180">
+        <div>
+          <h2>About me</h2>
+          <p>
+            I'm a self-taught software developer based in Cape Town. I started with a software engineering
+            bootcamp at <a href="https://www.hyperiondev.com/" target="_blank" rel="noopener noreferrer">HyperionDev</a>,
+            and I've been building ever since — moving from small web apps into data analysis, backtesting
+            and automated tooling.
+          </p>
+          <p>
+            Most of my recent work sits at the intersection of code and markets: pulling data from exchange
+            APIs, testing whether an idea actually holds up statistically, and being willing to throw it out
+            when it doesn't. I care more about measuring honestly than shipping something that looks clever.
+          </p>
+          <!-- Personality, kept short and in its proper place. -->
+          <p class="aside">
+            Outside of code, I hold my own in a hot wings challenge. Ghost peppers and Carolina Reapers
+            are a normal snack. 🌶️
+          </p>
+        </div>
       </div>
-    </div>
-    <hr>
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>If you love hot wings as much as i do .</h3>
-      <p class="contact-message">Love hot wings as much as I do? Let's talk about how awesome they are! We can code while we eat hot wings!</p>
-      <a class="btn" href="mailto:kuma2018shing@gmail.com">CONTACT ME</a>
-    </div>
-  </div>
+    </section>
 
-  <div class="bottom-container">
-    <img class="linkedin" src="images/linkedin.png" alt="linkedin-image"/>
-    <a class="footer-link" href="https://www.linkedin.com/in/kuma-shing-767a435a">LinkedIn</a>
-    <img class="twitter" src="images/twitter.png" alt="twitter-image"/>
-    <a class="footer-link" href="https://twitter.com/LawrenceKuma">Twitter</a>
-    <img class="github" src="images/github.png" alt="github-image"/>
-    <a class="footer-link" href="https://github.com/kuma2018shing">Github</a>
-    <p class="copyright">© 2020 Kuma Lawrence.</p>
-  </div>
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills">
+      <h2>What I work with</h2>
+      <p class="section-lead">Languages and tools I use regularly.</p>
 
+      <ul class="stack">
+        <li><img src="images/python.png" alt="" aria-hidden="true"><span>Python</span></li>
+        <li><img src="images/java.png" alt="" aria-hidden="true"><span>Java</span></li>
+        <li><img src="images/js.png" alt="" aria-hidden="true"><span>JavaScript</span></li>
+        <li><img src="images/html5.png" alt="" aria-hidden="true"><span>HTML5</span></li>
+        <li><img src="images/css.png" alt="" aria-hidden="true"><span>CSS3</span></li>
+        <li><img src="images/sql.png" alt="" aria-hidden="true"><span>SQL</span></li>
+      </ul>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Data &amp; analysis</h3>
+          <p>
+            Pulling and cleaning data from REST APIs, building reproducible pipelines with pandas, and
+            testing ideas against matched controls and train/test splits rather than eyeballing a chart.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Application development</h3>
+          <p>
+            Desktop apps with Java and Swing, game logic in Python and Java, and responsive front ends
+            with vanilla HTML, CSS and JavaScript.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Tooling &amp; automation</h3>
+          <p>
+            Git and GitHub, scheduled jobs, alerting into chat platforms, and command-line utilities that
+            take the repetitive parts out of a workflow.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============
+         Every link below points at a real public repo on your GitHub.
+         Add new ones by copying a single <article class="card"> block. -->
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+      <p class="section-lead">A few things I've built. More on my
+        <a href="https://github.com/kuma2018shing" target="_blank" rel="noopener noreferrer">GitHub</a>.
+      </p>
+
+      <div class="cards">
+
+        <article class="card">
+          <h3>Restaurant Management System</h3>
+          <p class="tags"><span>Java</span><span>Swing</span><span>CRUD</span></p>
+          <p>
+            A desktop application with a graphical interface for managing restaurant operations — adding,
+            updating and querying records through a structured UI.
+          </p>
+          <a class="card-link" href="https://github.com/kuma2018shing/Restaurant-Management-System"
+            target="_blank" rel="noopener noreferrer">View code →</a>
+        </article>
+
+        <article class="card">
+          <h3>News Blog</h3>
+          <p class="tags"><span>JavaScript</span><span>Node</span><span>Web</span></p>
+          <p>
+            A blog platform for publishing and browsing news posts, built to practise server-side routing
+            and templating.
+          </p>
+          <a class="card-link" href="https://github.com/kuma2018shing/News-Blog" target="_blank"
+            rel="noopener noreferrer">View code →</a>
+        </article>
+
+        <article class="card">
+          <h3>Snake — two ways</h3>
+          <p class="tags"><span>Python</span><span>Java</span><span>PyGame</span></p>
+          <p>
+            The same game implemented twice, once in Java and once in Python with PyGame — a deliberate
+            exercise in how the same logic maps onto two very different languages.
+          </p>
+          <a class="card-link" href="https://github.com/kuma2018shing/Snake-Game-PyGame-" target="_blank"
+            rel="noopener noreferrer">View code →</a>
+        </article>
+
+        <article class="card">
+          <h3>Newsletter Signup</h3>
+          <p class="tags"><span>Node</span><span>API</span></p>
+          <p>
+            A signup app wired into a third-party mailing API, handling form validation and success and
+            failure states.
+          </p>
+          <a class="card-link" href="https://github.com/kuma2018shing/Newsletter-Signup" target="_blank"
+            rel="noopener noreferrer">View code →</a>
+        </article>
+
+        <article class="card">
+          <h3>Simon Game</h3>
+          <p class="tags"><span>JavaScript</span><span>jQuery</span><span>DOM</span></p>
+          <p>
+            The memory game, built in the browser — sequence generation, event handling and game state
+            without a framework.
+          </p>
+          <a class="card-link" href="https://github.com/kuma2018shing/Simon-Game-V1" target="_blank"
+            rel="noopener noreferrer">View code →</a>
+        </article>
+
+        <!-- TODO (Kuma): your strongest project isn't listed because it isn't public yet.
+             Decide whether to publish the trading system, then drop it in here as the
+             FIRST card. Suggested copy is in the notes I gave you. -->
+        <article class="card card-muted">
+          <h3>More on the way</h3>
+          <p>
+            I'm currently working on a market analysis and backtesting system in Python and Pine Script.
+            Write-up coming soon.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-alt" id="contact">
+      <h2>Get in touch</h2>
+      <p class="section-lead">
+        Open to opportunities and collaboration. The fastest way to reach me is email.
+      </p>
+      <a class="btn" href="mailto:kuma2018shing@gmail.com">kuma2018shing@gmail.com</a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <ul class="social">
+      <li>
+        <a href="https://www.linkedin.com/in/kuma-shing-767a435a" target="_blank" rel="noopener noreferrer">
+          <img src="images/linkedin.png" alt="" aria-hidden="true"><span>LinkedIn</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/LawrenceKuma" target="_blank" rel="noopener noreferrer">
+          <img src="images/twitter.png" alt="" aria-hidden="true"><span>Twitter</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/kuma2018shing" target="_blank" rel="noopener noreferrer">
+          <img src="images/github.png" alt="" aria-hidden="true"><span>GitHub</span>
+        </a>
+      </li>
+    </ul>
+    <p class="copyright">© <span id="year">2026</span> Kuma Lawrence</p>
+  </footer>
+
+  <script>
+    // Keep the copyright year current without touching the file again.
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>
