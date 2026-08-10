@@ -4,18 +4,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kuma Lawrence — Software Developer</title>
+  <title>Kuma Lawrence — Quantitative Research &amp; Data Engineering</title>
 
   <meta name="description"
-    content="Kuma Lawrence — software developer based in Cape Town. Python, Java and JavaScript. I build trading tools, data pipelines and web apps.">
+    content="Kuma Lawrence — quantitative research and data engineering in Cape Town. Python, pandas and time-series analysis. I build market data pipelines and test hypotheses against controls.">
   <meta name="author" content="Kuma Lawrence">
-  <meta name="theme-color" content="#11999E">
+  <meta name="theme-color" content="#0b1418">
 
-  <!-- Link previews (WhatsApp, LinkedIn, Twitter, Slack) -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Kuma Lawrence — Software Developer">
+  <meta property="og:title" content="Kuma Lawrence — Quantitative Research &amp; Data Engineering">
   <meta property="og:description"
-    content="Software developer based in Cape Town. Python, Java and JavaScript. I build trading tools, data pipelines and web apps.">
+    content="Python, pandas and time-series analysis. I build market data pipelines and test hypotheses against matched controls — and report the negative results.">
   <meta property="og:url" content="https://kuma2018shing.github.io/CV/">
   <meta property="og:image" content="https://kuma2018shing.github.io/CV/images/lawrence.jpg">
   <meta name="twitter:card" content="summary">
@@ -24,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Sacramento&family=Merriweather:wght@400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -32,209 +31,325 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-nav">
-    <a class="nav-brand" href="#top">KL</a>
+  <header class="nav">
+    <a class="nav-brand" href="#top">
+      <span class="nav-mark">KL</span>
+      <span class="nav-name">Kuma Lawrence</span>
+    </a>
     <nav aria-label="Main">
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about"><i>01</i> About</a></li>
+        <li><a href="#capabilities"><i>02</i> Capabilities</a></li>
+        <li><a href="#work"><i>03</i> Work</a></li>
+        <li><a href="#contact"><i>04</i> Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- ============ HERO ============ -->
+  <!-- ================= HERO ================= -->
   <section class="hero" id="top">
-    <img class="cloud cloud-a" src="images/cloud.png" alt="" aria-hidden="true">
-    <img class="cloud cloud-b" src="images/cloud.png" alt="" aria-hidden="true">
+    <!-- Decorative equity-curve backdrop. Inline so there's no extra request. -->
+    <svg class="hero-plot" viewBox="0 0 1200 400" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="fadeLine" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="currentColor" stop-opacity="0" />
+          <stop offset="35%" stop-color="currentColor" stop-opacity=".9" />
+          <stop offset="100%" stop-color="currentColor" stop-opacity=".15" />
+        </linearGradient>
+      </defs>
+      <g class="hero-grid">
+        <line x1="0" y1="80" x2="1200" y2="80" />
+        <line x1="0" y1="160" x2="1200" y2="160" />
+        <line x1="0" y1="240" x2="1200" y2="240" />
+        <line x1="0" y1="320" x2="1200" y2="320" />
+      </g>
+      <path class="hero-line"
+        d="M0,330 L60,318 L120,336 L180,300 L240,312 L300,268 L360,286 L420,240 L480,258 L540,206 L600,228 L660,180 L720,196 L780,150 L840,168 L900,124 L960,140 L1020,96 L1080,112 L1140,70 L1200,84"
+        fill="none" stroke="url(#fadeLine)" />
+      <path class="hero-line hero-line-2"
+        d="M0,352 L60,346 L120,356 L180,338 L240,348 L300,326 L360,338 L420,318 L480,330 L540,304 L600,318 L660,296 L720,308 L780,286 L840,300 L900,278 L960,290 L1020,268 L1080,280 L1140,258 L1200,268"
+        fill="none" stroke="currentColor" />
+    </svg>
 
-    <div class="hero-text">
-      <h1>I'm Kuma,</h1>
-      <p class="hero-sub">a <span class="pro">pro</span>grammer.</p>
-      <p class="hero-blurb">
-        I build trading tools, data pipelines and web apps — mostly in Python, Java and JavaScript.
+    <div class="hero-inner">
+      <p class="eyebrow">Cape Town, South Africa</p>
+      <h1>Kuma Lawrence</h1>
+      <p class="hero-role">Quantitative research &amp; data engineering</p>
+      <p class="hero-lede">
+        I build market data pipelines and test trading hypotheses against matched controls —
+        then report the result, including when the result is nothing.
       </p>
       <div class="hero-actions">
-        <a class="btn" href="#projects">See my work</a>
+        <a class="btn" href="#work">Selected work</a>
         <a class="btn btn-ghost" href="mailto:kuma2018shing@gmail.com">Get in touch</a>
       </div>
-    </div>
 
-    <img class="hero-mountain" src="images/mountain.png" alt="" aria-hidden="true">
+      <dl class="stats">
+        <div>
+          <dt>Events analysed</dt>
+          <dd>70,000<span>+</span></dd>
+        </div>
+        <div>
+          <dt>Markets monitored</dt>
+          <dd>500<span>+</span></dd>
+        </div>
+        <div>
+          <dt>Price history tested</dt>
+          <dd>2<span> yrs+</span></dd>
+        </div>
+      </dl>
+    </div>
   </section>
 
   <main id="main">
 
-    <!-- ============ ABOUT ============ -->
+    <!-- ================= 01 ABOUT ================= -->
     <section class="section" id="about">
-      <div class="about-grid">
-        <img class="avatar" src="images/lawrence.jpg" alt="Portrait of Kuma Lawrence" width="180" height="180">
-        <div>
-          <h2>About me</h2>
-          <p>
-            I'm a self-taught software developer based in Cape Town. I started with a software engineering
-            bootcamp at <a href="https://www.hyperiondev.com/" target="_blank" rel="noopener noreferrer">HyperionDev</a>,
-            and I've been building ever since — moving from small web apps into data analysis, backtesting
-            and automated tooling.
+      <p class="sec-index">01 — About</p>
+      <h2>Research first, code second.</h2>
+
+      <div class="about">
+        <div class="about-media">
+          <img src="images/lawrence.jpg" alt="Portrait of Kuma Lawrence" width="240" height="240" loading="lazy">
+        </div>
+        <div class="about-body">
+          <p class="lead">
+            I'm a self-taught developer working at the intersection of code and markets. Most of what I do
+            is not writing trading logic — it's building the apparatus that tells me whether a piece of
+            trading logic actually does anything.
           </p>
           <p>
-            Most of my recent work sits at the intersection of code and markets: pulling data from exchange
-            APIs, testing whether an idea actually holds up statistically, and being willing to throw it out
-            when it doesn't. I care more about measuring honestly than shipping something that looks clever.
+            That means pulling multi-year price and order-flow history from exchange APIs, resampling it
+            into something reproducible, and then testing an idea properly: against a matched control drawn
+            from the same regime, split into separate training and out-of-sample periods, with the sample
+            size and the cost assumptions stated up front.
           </p>
-          <!-- Personality, kept short and in its proper place. -->
+          <p>
+            I've run tens of thousands of events through that process. The honest headline is that most
+            ideas do not survive it — and I think being able to say so is the point. It is easy to keep
+            tuning parameters until a backtest looks profitable. The discipline is in recognising that
+            you've fitted noise, writing down that the hypothesis failed, and not quietly running the
+            search again.
+          </p>
+          <p>
+            What did survive that process were a handful of monotonic relationships that held in both the
+            training and test windows, and one filter that got <em>stronger</em> out of sample rather than
+            weaker. Those are the only kind of results I trust.
+          </p>
           <p class="aside">
-            Outside of code, I hold my own in a hot wings challenge. Ghost peppers and Carolina Reapers
-            are a normal snack. 🌶️
+            Away from the terminal I'm competitive at hot wings. Ghost peppers and Carolina Reapers are a
+            normal snack.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- ============ SKILLS ============ -->
-    <section class="section section-alt" id="skills">
-      <h2>What I work with</h2>
-      <p class="section-lead">Languages and tools I use regularly.</p>
+    <!-- ================= 02 CAPABILITIES ================= -->
+    <section class="section section-alt" id="capabilities">
+      <p class="sec-index">02 — Capabilities</p>
+      <h2>What I actually do.</h2>
+      <p class="sec-lede">
+        Grouped by the part of the problem, not by the logo on the tool.
+      </p>
 
-      <ul class="stack">
-        <li><img src="images/python.png" alt="" aria-hidden="true"><span>Python</span></li>
-        <li><img src="images/java.png" alt="" aria-hidden="true"><span>Java</span></li>
-        <li><img src="images/js.png" alt="" aria-hidden="true"><span>JavaScript</span></li>
-        <li><img src="images/html5.png" alt="" aria-hidden="true"><span>HTML5</span></li>
-        <li><img src="images/css.png" alt="" aria-hidden="true"><span>CSS3</span></li>
-        <li><img src="images/sql.png" alt="" aria-hidden="true"><span>SQL</span></li>
-      </ul>
+      <div class="cap-grid">
 
-      <div class="cards">
-        <article class="card">
-          <h3>Data &amp; analysis</h3>
+        <article class="cap">
+          <h3>Quantitative research</h3>
           <p>
-            Pulling and cleaning data from REST APIs, building reproducible pipelines with pandas, and
-            testing ideas against matched controls and train/test splits rather than eyeballing a chart.
+            Hypothesis testing on financial time series. Matched controls so you measure the effect and not
+            the market's own drift. Train/test splits with a held-out period that never informs the design.
+            Awareness of multiple comparisons — if you test fifty variations, some will look good by
+            chance, and the honest move is to say so.
           </p>
+          <ul class="chips">
+            <li>Hypothesis testing</li>
+            <li>Matched controls</li>
+            <li>Out-of-sample validation</li>
+            <li>Backtesting</li>
+            <li>Cost modelling</li>
+            <li>Drawdown / MAE analysis</li>
+          </ul>
         </article>
-        <article class="card">
-          <h3>Application development</h3>
+
+        <article class="cap">
+          <h3>Data engineering</h3>
           <p>
-            Desktop apps with Java and Swing, game logic in Python and Java, and responsive front ends
-            with vanilla HTML, CSS and JavaScript.
+            Ingesting years of OHLCV and order-flow data from exchange REST APIs, handling rate limits,
+            pagination and gaps. Caching and local persistence so a study is reproducible rather than
+            re-downloaded. Resampling across timeframes, and the session and timezone handling that
+            time-series work quietly lives or dies on.
           </p>
+          <ul class="chips">
+            <li>Python</li>
+            <li>pandas</li>
+            <li>NumPy</li>
+            <li>REST APIs</li>
+            <li>Time-series resampling</li>
+            <li>SQL</li>
+            <li>Caching / persistence</li>
+          </ul>
         </article>
-        <article class="card">
-          <h3>Tooling &amp; automation</h3>
+
+        <article class="cap">
+          <h3>Systems &amp; automation</h3>
           <p>
-            Git and GitHub, scheduled jobs, alerting into chat platforms, and command-line utilities that
-            take the repetitive parts out of a workflow.
+            Turning a study into something that runs on its own: scheduled scanners across hundreds of
+            instruments, alerting into chat platforms, state that survives a restart, and command-line
+            tooling that removes the manual steps. Plus the ordinary software engineering underneath —
+            version control, structured logging, packaging.
           </p>
+          <ul class="chips">
+            <li>Scheduled jobs</li>
+            <li>Alerting pipelines</li>
+            <li>CLI tooling</li>
+            <li>Git / GitHub</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+          </ul>
         </article>
+
+        <article class="cap">
+          <h3>Market microstructure</h3>
+          <p>
+            Working knowledge of the mechanics the data actually describes: volume profiles and value area,
+            cumulative volume delta, relative volume normalised by session, volatility regimes, and trend
+            versus range classification. Indicator development in Pine Script alongside the Python research.
+          </p>
+          <ul class="chips">
+            <li>Volume profile</li>
+            <li>Order flow / CVD</li>
+            <li>Volatility regimes</li>
+            <li>Pine Script</li>
+            <li>Signal design</li>
+          </ul>
+        </article>
+
       </div>
     </section>
 
-    <!-- ============ PROJECTS ============
-         Every link below points at a real public repo on your GitHub.
-         Add new ones by copying a single <article class="card"> block. -->
-    <section class="section" id="projects">
-      <h2>Projects</h2>
-      <p class="section-lead">A few things I've built. More on my
-        <a href="https://github.com/kuma2018shing" target="_blank" rel="noopener noreferrer">GitHub</a>.
+    <!-- ================= 03 WORK ================= -->
+    <section class="section" id="work">
+      <p class="sec-index">03 — Selected work</p>
+      <h2>Things I've built.</h2>
+      <p class="sec-lede">
+        Public repositories. More at
+        <a href="https://github.com/kuma2018shing" target="_blank" rel="noopener noreferrer">github.com/kuma2018shing</a>.
       </p>
 
-      <div class="cards">
+      <div class="work-grid">
 
-        <article class="card">
-          <h3>Restaurant Management System</h3>
-          <p class="tags"><span>Java</span><span>Swing</span><span>CRUD</span></p>
+        <article class="work">
+          <div class="work-head">
+            <h3>Restaurant Management System</h3>
+            <p class="work-meta">Java · Swing · CRUD</p>
+          </div>
           <p>
-            A desktop application with a graphical interface for managing restaurant operations — adding,
-            updating and querying records through a structured UI.
+            A desktop application with a graphical interface for managing restaurant operations — structured
+            record creation, updates and queries behind a windowed UI.
           </p>
-          <a class="card-link" href="https://github.com/kuma2018shing/Restaurant-Management-System"
-            target="_blank" rel="noopener noreferrer">View code →</a>
+          <a class="work-link" href="https://github.com/kuma2018shing/Restaurant-Management-System"
+            target="_blank" rel="noopener noreferrer">View repository</a>
         </article>
 
-        <article class="card">
-          <h3>News Blog</h3>
-          <p class="tags"><span>JavaScript</span><span>Node</span><span>Web</span></p>
+        <article class="work">
+          <div class="work-head">
+            <h3>News Blog</h3>
+            <p class="work-meta">JavaScript · Node · Templating</p>
+          </div>
           <p>
-            A blog platform for publishing and browsing news posts, built to practise server-side routing
-            and templating.
+            A blog platform for publishing and browsing posts, built to work through server-side routing,
+            templating and persistence end to end.
           </p>
-          <a class="card-link" href="https://github.com/kuma2018shing/News-Blog" target="_blank"
-            rel="noopener noreferrer">View code →</a>
+          <a class="work-link" href="https://github.com/kuma2018shing/News-Blog" target="_blank"
+            rel="noopener noreferrer">View repository</a>
         </article>
 
-        <article class="card">
-          <h3>Snake — two ways</h3>
-          <p class="tags"><span>Python</span><span>Java</span><span>PyGame</span></p>
+        <article class="work">
+          <div class="work-head">
+            <h3>Snake — Java and Python</h3>
+            <p class="work-meta">Java · Python · PyGame</p>
+          </div>
           <p>
-            The same game implemented twice, once in Java and once in Python with PyGame — a deliberate
-            exercise in how the same logic maps onto two very different languages.
+            The same game implemented twice in two languages — a deliberate exercise in how identical logic
+            maps onto different type systems, loops and rendering models.
           </p>
-          <a class="card-link" href="https://github.com/kuma2018shing/Snake-Game-PyGame-" target="_blank"
-            rel="noopener noreferrer">View code →</a>
+          <a class="work-link" href="https://github.com/kuma2018shing/Snake-Game-PyGame-" target="_blank"
+            rel="noopener noreferrer">View repository</a>
         </article>
 
-        <article class="card">
-          <h3>Newsletter Signup</h3>
-          <p class="tags"><span>Node</span><span>API</span></p>
+        <article class="work">
+          <div class="work-head">
+            <h3>Newsletter Signup</h3>
+            <p class="work-meta">Node · Third-party API</p>
+          </div>
           <p>
-            A signup app wired into a third-party mailing API, handling form validation and success and
-            failure states.
+            A signup service integrated with an external mailing API, covering validation, request handling
+            and explicit success and failure paths.
           </p>
-          <a class="card-link" href="https://github.com/kuma2018shing/Newsletter-Signup" target="_blank"
-            rel="noopener noreferrer">View code →</a>
+          <a class="work-link" href="https://github.com/kuma2018shing/Newsletter-Signup" target="_blank"
+            rel="noopener noreferrer">View repository</a>
         </article>
 
-        <article class="card">
-          <h3>Simon Game</h3>
-          <p class="tags"><span>JavaScript</span><span>jQuery</span><span>DOM</span></p>
+        <article class="work">
+          <div class="work-head">
+            <h3>Simon Game</h3>
+            <p class="work-meta">JavaScript · jQuery · DOM</p>
+          </div>
           <p>
-            The memory game, built in the browser — sequence generation, event handling and game state
+            The memory game in the browser — sequence generation, event handling and game state managed
             without a framework.
           </p>
-          <a class="card-link" href="https://github.com/kuma2018shing/Simon-Game-V1" target="_blank"
-            rel="noopener noreferrer">View code →</a>
+          <a class="work-link" href="https://github.com/kuma2018shing/Simon-Game-V1" target="_blank"
+            rel="noopener noreferrer">View repository</a>
         </article>
 
       </div>
     </section>
 
-    <!-- ============ CONTACT ============ -->
+    <!-- ================= 04 CONTACT ================= -->
     <section class="section section-alt" id="contact">
-      <h2>Get in touch</h2>
-      <p class="section-lead">
-        Open to opportunities and collaboration. The fastest way to reach me is email.
+      <p class="sec-index">04 — Contact</p>
+      <h2>Open to quantitative and data roles.</h2>
+      <p class="sec-lede">
+        Research, data engineering, or anything where the work is figuring out whether something is real.
+        Email is the fastest way to reach me.
       </p>
-      <a class="btn" href="mailto:kuma2018shing@gmail.com">kuma2018shing@gmail.com</a>
+      <a class="btn btn-lg" href="mailto:kuma2018shing@gmail.com">kuma2018shing@gmail.com</a>
     </section>
 
   </main>
 
-  <footer class="site-footer">
-    <ul class="social">
-      <li>
-        <a href="https://www.linkedin.com/in/kuma-shing-767a435a" target="_blank" rel="noopener noreferrer">
-          <img src="images/linkedin.png" alt="" aria-hidden="true"><span>LinkedIn</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/LawrenceKuma" target="_blank" rel="noopener noreferrer">
-          <img src="images/twitter.png" alt="" aria-hidden="true"><span>Twitter</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/kuma2018shing" target="_blank" rel="noopener noreferrer">
-          <img src="images/github.png" alt="" aria-hidden="true"><span>GitHub</span>
-        </a>
-      </li>
-    </ul>
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-name">Kuma Lawrence</p>
+      <ul class="social">
+        <li><a href="https://github.com/kuma2018shing" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/kuma-shing-767a435a" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://twitter.com/LawrenceKuma" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+        <li><a href="mailto:kuma2018shing@gmail.com">Email</a></li>
+      </ul>
+    </div>
     <p class="copyright">© <span id="year">2026</span> Kuma Lawrence</p>
   </footer>
 
   <script>
-    // Keep the copyright year current without touching the file again.
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Highlight the section currently in view in the nav.
+    const links = [...document.querySelectorAll('.nav nav a')];
+    const map = new Map(links.map(a => [a.getAttribute('href').slice(1), a]));
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        const link = map.get(e.target.id);
+        if (link) link.classList.toggle('is-active', e.isIntersecting);
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    ['about', 'capabilities', 'work', 'contact'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) obs.observe(el);
+    });
   </script>
 </body>
 
