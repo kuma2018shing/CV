@@ -363,20 +363,22 @@ em { color: var(--text); font-style: italic; }
   align-items: start;
 }
 @media (min-width: 860px) {
-  .about { grid-template-columns: 240px 1fr; }
+  .about { grid-template-columns: 260px 1fr; }
 }
 
+/* Portrait is a 3:4 source shot. A square crop cut the hands out, so the
+   frame is 4:5 and anchored high to keep the face off-centre and the
+   gesture intact. Already black and white, so no grayscale filter here —
+   a hover-to-colour transition would have been a no-op. */
 .about-media img {
-  width: 240px;
+  width: 260px;
   max-width: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: center 22%;
   border-radius: var(--radius);
   border: 1px solid var(--line);
-  filter: grayscale(100%) contrast(1.05);
-  transition: filter .35s var(--ease);
 }
-.about-media img:hover { filter: grayscale(0%); }
 
 .about-body { color: var(--text-dim); }
 .about-body .lead {
