@@ -477,6 +477,21 @@ em { color: var(--text); font-style: italic; }
   transform: translateY(-3px);
 }
 
+/* Lead item: spans the row so the research write-up reads as the headline
+   piece rather than one card among several. */
+.work-feature {
+  border-color: var(--line);
+  background:
+    linear-gradient(135deg, var(--accent-glow), transparent 55%),
+    var(--surface);
+}
+.work-feature h3 { font-size: 1.2rem; }
+
+@media (min-width: 760px) {
+  .work-feature { grid-column: 1 / -1; }
+  .work-feature > p { max-width: 68ch; }
+}
+
 .work-head { margin-bottom: .9rem; }
 .work h3 { font-size: 1.05rem; margin-bottom: .3em; }
 
